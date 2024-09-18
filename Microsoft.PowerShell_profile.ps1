@@ -1,10 +1,10 @@
-$Env:KOMOREBI_CONFIG_HOME = 'C:\Users\ozzyman\.config\komorebi'
+$Env:KOMOREBI_CONFIG_HOME = '$Env:USERPROFILE\.config\komorebi'
 
 if ($host.Name -eq 'ConsoleHost') {
   Import-Module PSReadline
- 
+
   Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
-  Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward 
+  Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
   Set-PSReadLineKeyHandler -Key Tab -Function Complete
   Set-PsFzfOption -EnableAliasFuzzyGitStatus -EnableAliasFuzzySetLocation
 }
