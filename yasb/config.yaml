@@ -4,8 +4,8 @@ watch_config: true
 bars:
   status-bar:
     enabled: true
-    #screens: ['DELL P2419H (1)'] 
-    screens: ['*'] 
+    #screens: ['DELL P2419H (1)']
+    screens: ['*']
     class_name: "yasb-bar"
     alignment:
       position: "top"
@@ -29,7 +29,7 @@ bars:
       left:
         [
           "active_window"
-        ] 
+        ]
       center: [
          "komorebi_workspaces",
          "komorebi_active_layout"
@@ -39,7 +39,6 @@ bars:
           "weather",
           "apps",
           "power_menu",
-          "clock"
         ]
 widgets:
   active_window:
@@ -185,7 +184,7 @@ widgets:
       location_id: 'b2b85ee34efa344f12f4c477454576747e73b62408bc4adbf666d193c66c94e1'
       callbacks:
         on_right: "toggle_label"
-      icons: 
+      icons:
         sunnyDay: "\ue30d"
         clearNight: "\ue32b"
         cloudyFoggyDay: "\ue312"
@@ -226,7 +225,7 @@ widgets:
       callbacks:
         on_right: "exec cmd.exe /c start ms-settings:sound"
 
- 
+
   power_menu_native:
     type: "yasb.custom.CustomWidget"
     options:
@@ -243,7 +242,7 @@ widgets:
       label: "\uf011"
       blur: false
       blur_background: true
-      animation_duration: 200 # Milisecond 
+      animation_duration: 200 # Milisecond
       button_row: 3 # Number of buttons in row, min 1 max 5
       buttons:
         lock: ["\uea75","Lock"]
@@ -255,7 +254,7 @@ widgets:
         cancel: ["\udb81\udf3a","Cancel"]
         #force_shutdown: ["\uf011","Force Shut Down"]
         #force_restart: ["\uead2","Force Restart"]
- 
+
 
   apps:
     type: "yasb.applications.ApplicationsWidget"
@@ -263,11 +262,10 @@ widgets:
       label: "{data}"
       app_list:
         - {icon: "\uf489", launch: "wt"}
-        - {icon: "\uf488", launch: "C:\\Users\\ozzyman\\AppData\\Local\\Microsoft\\WindowsApps\\Arc.exe"}
-        - {icon: "\uf413", launch: "explorer c:\\Users\\amn"}
-        - {icon: "\udb82\ude1e", launch: "C:\\Users\\amn\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"}
-        - {icon: "\udb84\udf55", launch: "widget"}
+        - {icon: "\uf413", launch: "explorer"}
+        - {icon: "\uf488", launch: "C:\\Program Files\\WindowsApps\\TheBrowserCompany.Arc_1.19.2.49737_x64__ttt1ap7aakyb4\\Arc.exe"}
         # Currently available to use quick_settings, notification_center, search, widget, launcher (launcher will trigger ALT+A)
+        - {icon: "\udb84\udf55", launch: "widget"}
 
   fake_widget_left:
     type: "yasb.custom.CustomWidget"
@@ -282,7 +280,7 @@ widgets:
       label: "\ue0b6"
       label_alt: "\ue0b6"
       class_name: "fake-widget-right"
-   
+
   nvidia_temp:
     type: "yasb.custom.CustomWidget"
     options:
