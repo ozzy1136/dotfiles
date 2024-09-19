@@ -1,12 +1,10 @@
-$Env:KOMOREBI_CONFIG_HOME = '$Env:USERPROFILE\.config\komorebi'
-
 if ($host.Name -eq 'ConsoleHost') {
   Import-Module PSReadline
 
   Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
   Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
   Set-PSReadLineKeyHandler -Key Tab -Function Complete
-  Set-PsFzfOption -EnableAliasFuzzyGitStatus -EnableAliasFuzzySetLocation
+  Set-PsFzfOption -EnableAliasFuzzySetLocation
 }
 
 function prompt {
@@ -23,3 +21,5 @@ function prompt {
 function komorebi-start {
   komorebic start --whkd
 }
+
+$Env:KOMOREBI_CONFIG_HOME = 'C:\Users\{User}\.config\komorebi'
