@@ -133,9 +133,6 @@ widgets:
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
-    options:
-    options:
-    options:
       label_alt: "{wifi_icon}  {wifi_name}"
       update_interval: 5000
       wifi_icons:
@@ -225,17 +222,6 @@ widgets:
       callbacks:
         on_right: "exec cmd.exe /c start ms-settings:sound"
 
-
-  power_menu_native:
-    type: "yasb.custom.CustomWidget"
-    options:
-      label: "\uf011"
-      label_alt: "\uf011"
-      exec_options:
-        run_once: true
-      callbacks:
-        on_left: "exec powershell (New-Object -ComObject Shell.Application).ShutdownWindows()"
-
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
@@ -262,7 +248,7 @@ widgets:
       label: "{data}"
       app_list:
         - {icon: "\uf489", launch: "wt"}
-        - {icon: "\uf413", launch: "explorer"}
+        - {icon: "\uf413", launch: "explorer C:\\Users\\{User}"}
         - {icon: "\uf488", launch: "C:\\Program Files\\WindowsApps\\TheBrowserCompany.Arc_1.19.2.49737_x64__ttt1ap7aakyb4\\Arc.exe"}
         # Currently available to use quick_settings, notification_center, search, widget, launcher (launcher will trigger ALT+A)
         - {icon: "\udb84\udf55", launch: "widget"}
