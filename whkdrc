@@ -5,11 +5,6 @@
 alt + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
 alt + shift + o         : komorebic reload-configuration
 
-# App shortcuts - these require shell to be pwsh / powershell
-# The apps will be focused if open, or launched if not open
-# alt + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
-# alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
-
 alt + q                 : komorebic close
 alt + m                 : komorebic minimize
 alt + shift + m         : komorebic toggle-maximize
@@ -80,4 +75,4 @@ alt + shift + oem_4     : komorebic cycle-layout previous # oem_4 is [
 alt + shift + oem_6     : komorebic cycle-layout next # oem_6 is ]
 alt + p                 : komorebic manage
 alt + shift + p         : komorebic unmanage
-# komorebic unmanaged-window-operation-behaviour op/no-op
+#                       : komorebic unmanaged-window-operation-behaviour op/no-op
