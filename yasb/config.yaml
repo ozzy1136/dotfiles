@@ -248,8 +248,8 @@ widgets:
       label: "{data}"
       app_list:
         - {icon: "\uf489", launch: "wt"}
-        - {icon: "\uf413", launch: "explorer C:\\Users\\{User}"}
         - {icon: "\uf488", launch: "C:\\Program Files\\WindowsApps\\TheBrowserCompany.Arc_1.19.2.49737_x64__ttt1ap7aakyb4\\Arc.exe"}
+        - {icon: "\uf413", launch: "explorer C:\\Users\\ozzyman"}
         # Currently available to use quick_settings, notification_center, search, widget, launcher (launcher will trigger ALT+A)
         - {icon: "\udb84\udf55", launch: "widget"}
 
