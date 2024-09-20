@@ -28,8 +28,6 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 999
 
 vim.keymap.set("i", "jk", "<esc>")
-vim.keymap.set("n", "<c-q>", ":q<cr>")
-vim.keymap.set("n", "<c-w>", ":w<cr>")
 vim.keymap.set("n", "<esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<c-d>", "<c-d>zz",
                {desc = "Keep line centered while scrolling down by half page"})
