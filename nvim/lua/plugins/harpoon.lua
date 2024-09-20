@@ -9,6 +9,7 @@ return {
 
             -- Telescope integration currently broken on Windows
             -- https://github.com/ThePrimeagen/harpoon/issues/491
+            -- https://github.com/ThePrimeagen/harpoon/issues/627
             -- basic telescope configuration
             local conf = require("telescope.config").values
             local function toggle_telescope(harpoon_files)
@@ -29,7 +30,6 @@ return {
 
             vim.keymap.set("n", "<leader>hl", function()
                 -- harpoon.ui:toggle_quick_menu(harpoon:list())
-                -- Telescope integration currently broken on Windows
                 toggle_telescope(harpoon:list())
             end, {desc = "Open harpoon window"})
             vim.keymap.set("n", "<leader>ha", function()
