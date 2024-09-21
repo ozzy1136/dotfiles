@@ -50,7 +50,7 @@
             "font": 
             {
                 "face": "CaskaydiaCove Nerd Font Mono",
-                "size": 15.0
+                "size": 16.0
             }
         },
         "list": 
@@ -370,7 +370,7 @@
         {
             "background": "#1D1D26",
             "black": "#1D1D26",
-            "blue": "#00CBFF",
+            "blue": "#00526B",
             "brightBlack": "#636667",
             "brightBlue": "#00CBFF",
             "brightCyan": "#00D5D4",
