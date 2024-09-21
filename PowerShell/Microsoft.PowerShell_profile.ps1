@@ -24,4 +24,4 @@ function komorebi-start {
 
 $Env:KOMOREBI_CONFIG_HOME = "C:\Users\{User}\.config\komorebi"
 
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/tokyo.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$Env:USERPROFILE/.config/oh-my-posh/tokyo.omp.json" | Invoke-Expression
