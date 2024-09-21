@@ -46,6 +46,7 @@
         "defaults": 
         {
             "colorScheme": "Tinacious Design (Dark)",
+            "cursorShape": "bar",
             "font": 
             {
                 "face": "CaskaydiaCove Nerd Font Mono",
