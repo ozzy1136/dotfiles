@@ -7,7 +7,7 @@ return {
             "nvim-lua/plenary.nvim", "nvim-telescope/telescope-fzf-native.nvim",
             "nvim-telescope/telescope-ui-select.nvim",
             {"nvim-tree/nvim-web-devicons", enabled = vim.g.have_nerd_font},
-            "BurntSushi/ripgrep", "sharkdp/fd"
+            "BurntSushi/ripgrep", "sharkdp/fd",
         },
         config = function()
             local telescope = require("telescope")
@@ -15,7 +15,7 @@ return {
 
             -- Clone the default Telescope configuration
             local vimgrep_arguments = {
-                unpack(telescopeConfig.values.vimgrep_arguments)
+                unpack(telescopeConfig.values.vimgrep_arguments),
             }
 
             -- NOTE: hidden flag allows to search dotfiles
@@ -29,19 +29,20 @@ return {
                     -- `hidden = true` is not supported in text grep commands.
                     vimgrep_arguments = vimgrep_arguments,
                     layout_config = {
-                        horizontal = {width = 0.9, preview_cutoff = 100}
-                    }
+                        horizontal = {width = 0.9, preview_cutoff = 100},
+                    },
+                    path_display = {"filename_first", "truncate"},
                 },
                 pickers = {
                     find_files = {
                         find_command = {
-                            "rg", "--files", "--hidden", "--glob", "!**/.git/*"
-                        }
-                    }
+                            "rg", "--files", "--hidden", "--glob", "!**/.git/*",
+                        },
+                    },
                 },
                 extensions = {
-                    ["ui-select"] = {require("telescope.themes").get_dropdown()}
-                }
+                    ["ui-select"] = {require("telescope.themes").get_dropdown()},
+                },
             })
 
             pcall(require("telescope").load_extension, "fzf")
@@ -73,10 +74,10 @@ return {
             vim.keymap.set("n", "<leader>/", function()
                 -- You can pass additional configuration to Telescope to change the theme, layout, etc.
                 builtin.current_buffer_fuzzy_find(
-                    require("telescope.themes").get_dropdown {
-                        winblend = 10,
-                        previewer = false
-                    })
+                  require("telescope.themes").get_dropdown {
+                      winblend = 10,
+                      previewer = false,
+                  })
             end, {desc = "[/] Fuzzily search in current buffer"})
 
             -- It's also possible to pass additional configuration options.
@@ -84,7 +85,7 @@ return {
             vim.keymap.set("n", "<leader>s/", function()
                 builtin.live_grep {
                     grep_open_files = true,
-                    prompt_title = "Live Grep in Open Files"
+                    prompt_title = "Live Grep in Open Files",
                 }
             end, {desc = "[S]earch [/] in Open Files"})
 
@@ -92,6 +93,6 @@ return {
             vim.keymap.set("n", "<leader>sn", function()
                 builtin.find_files {cwd = vim.fn.stdpath "config"}
             end, {desc = "[S]earch [N]eovim files"})
-        end
-    }
+        end,
+    },
 }
