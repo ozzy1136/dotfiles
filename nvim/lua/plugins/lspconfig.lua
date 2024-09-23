@@ -7,16 +7,16 @@ return {
         opts = {
             library = {
                 -- Load luvit types when the `vim.uv` word is found
-                {path = "luvit-meta/library", words = {"vim%.uv"}},
-            },
-        },
+                {path = "luvit-meta/library", words = {"vim%.uv"}}
+            }
+        }
     }, {"Bilal2453/luvit-meta", lazy = true}, {
         "neovim/nvim-lspconfig",
         dependencies = {
             {"williamboman/mason.nvim", config = true},
             "williamboman/mason-lspconfig.nvim",
             "WhoIsSethDaniel/mason-tool-installer.nvim",
-            {"j-hui/fidget.nvim", opts = {}}, "hrsh7th/cmp-nvim-lsp",
+            {"j-hui/fidget.nvim", opts = {}}, "hrsh7th/cmp-nvim-lsp"
         },
         config = function()
             vim.api.nvim_create_autocmd("LspAttach", {
@@ -27,7 +27,7 @@ return {
                         mode = mode or "n"
                         vim.keymap.set(mode, keys, func, {
                             buffer = event.buf,
-                            desc = "LSP: " .. desc,
+                            desc = "LSP: " .. desc
                         })
                     end
 
@@ -84,39 +84,40 @@ return {
                     --
                     -- When you move your cursor, the highlights will be cleared (the second autocommand).
                     local client = vim.lsp
-                                     .get_client_by_id(event.data.client_id)
+                                       .get_client_by_id(event.data.client_id)
                     if client and
-                      client.supports_method(
-                        vim.lsp.protocol.Methods.textDocument_documentHighlight) then
+                        client.supports_method(
+                            vim.lsp.protocol.Methods
+                                .textDocument_documentHighlight) then
                         local highlight_augroup =
-                          vim.api.nvim_create_augroup("kickstart-lsp-highlight",
-                                                      {clear = false})
+                            vim.api.nvim_create_augroup(
+                                "kickstart-lsp-highlight", {clear = false})
                         vim.api.nvim_create_autocmd({
-                            "CursorHold", "CursorHoldI",
+                            "CursorHold", "CursorHoldI"
                         }, {
                             buffer = event.buf,
                             group = highlight_augroup,
-                            callback = vim.lsp.buf.document_highlight,
+                            callback = vim.lsp.buf.document_highlight
                         })
 
                         vim.api.nvim_create_autocmd({
-                            "CursorMoved", "CursorMovedI",
+                            "CursorMoved", "CursorMovedI"
                         }, {
                             buffer = event.buf,
                             group = highlight_augroup,
-                            callback = vim.lsp.buf.clear_references,
+                            callback = vim.lsp.buf.clear_references
                         })
 
                         vim.api.nvim_create_autocmd("LspDetach", {
                             group = vim.api.nvim_create_augroup(
-                              "kickstart-lsp-detach", {clear = true}),
+                                "kickstart-lsp-detach", {clear = true}),
                             callback = function(event2)
                                 vim.lsp.buf.clear_references()
                                 vim.api.nvim_clear_autocmds {
                                     group = "kickstart-lsp-highlight",
-                                    buffer = event2.buf,
+                                    buffer = event2.buf
                                 }
-                            end,
+                            end
                         })
                     end
 
@@ -125,16 +126,16 @@ return {
                     --
                     -- This may be unwanted, since they displace some of your code
                     if client and
-                      client.supports_method(
-                        vim.lsp.protocol.Methods.textDocument_inlayHint) then
+                        client.supports_method(
+                            vim.lsp.protocol.Methods.textDocument_inlayHint) then
                         map("<leader>th", function()
                             vim.lsp.inlay_hint.enable(
-                              not vim.lsp.inlay_hint.is_enabled {
-                                  bufnr = event.buf,
-                              })
+                                not vim.lsp.inlay_hint.is_enabled {
+                                    bufnr = event.buf
+                                })
                         end, "[T]oggle Inlay [H]ints")
                     end
-                end,
+                end
             })
 
             -- LSP servers and clients are able to communicate to each other what features they support.
@@ -143,7 +144,7 @@ return {
             --  So, we create new capabilities with nvim cmp, and then broadcast that to the servers.
             local capabilities = vim.lsp.protocol.make_client_capabilities()
             capabilities = vim.tbl_deep_extend("force", capabilities, require(
-                                                 "cmp_nvim_lsp").default_capabilities())
+                                                   "cmp_nvim_lsp").default_capabilities())
 
             local servers = {
                 css_variables = {},
@@ -158,33 +159,33 @@ return {
                     on_init = function(client)
                         local path = client.workspace_folders[1].name
                         if vim.loop.fs_stat(path .. "/.luarc.json") or
-                          vim.loop.fs_stat(path .. "/.luarc.jsonc") then
+                            vim.loop.fs_stat(path .. "/.luarc.jsonc") then
                             return
                         end
 
                         client.config.settings.Lua =
-                          vim.tbl_deep_extend("force",
-                                              client.config.settings.Lua, {
-                              runtime = {
-                                  -- Tell the language server which version of Lua you're using
-                                  -- (most likely LuaJIT in the case of Neovim)
-                                  version = "LuaJIT",
-                              },
-                              -- Make the server aware of Neovim runtime files
-                              workspace = {
-                                  checkThirdParty = false,
-                                  library = {
-                                      vim.env.VIMRUNTIME,
-                                      -- Depending on the usage, you might want to add additional paths here.
-                                      -- "${3rd}/luv/library"
-                                      -- "${3rd}/busted/library",
-                                  },
-                                  -- or pull in all of 'runtimepath'. NOTE: this is a lot slower
-                                  -- library = vim.api.nvim_get_runtime_file("", true)
-                              },
-                          })
-                    end,
-                },
+                            vim.tbl_deep_extend("force",
+                                                client.config.settings.Lua, {
+                                runtime = {
+                                    -- Tell the language server which version of Lua you're using
+                                    -- (most likely LuaJIT in the case of Neovim)
+                                    version = "LuaJIT"
+                                },
+                                -- Make the server aware of Neovim runtime files
+                                workspace = {
+                                    checkThirdParty = false,
+                                    library = {
+                                        vim.env.VIMRUNTIME
+                                        -- Depending on the usage, you might want to add additional paths here.
+                                        -- "${3rd}/luv/library"
+                                        -- "${3rd}/busted/library",
+                                    }
+                                    -- or pull in all of 'runtimepath'. NOTE: this is a lot slower
+                                    -- library = vim.api.nvim_get_runtime_file("", true)
+                                }
+                            })
+                    end
+                }
             }
 
             require("mason").setup()
@@ -194,7 +195,7 @@ return {
             local ensure_installed = vim.tbl_keys(servers or {})
             vim.list_extend(ensure_installed, {})
             require("mason-tool-installer").setup {
-                ensure_installed = ensure_installed,
+                ensure_installed = ensure_installed
             }
 
             require("mason-lspconfig").setup {
@@ -205,12 +206,12 @@ return {
                         -- by the server configuration above. Useful when disabling
                         -- certain features of an LSP (for example, turning off formatting for ts_ls)
                         server.capabilities =
-                          vim.tbl_deep_extend("force", {}, capabilities,
-                                              server.capabilities or {})
+                            vim.tbl_deep_extend("force", {}, capabilities,
+                                                server.capabilities or {})
                         require("lspconfig")[server_name].setup(server)
-                    end,
-                },
+                    end
+                }
             }
-        end,
-    },
+        end
+    }
 }
