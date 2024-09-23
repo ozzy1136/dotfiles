@@ -17,14 +17,14 @@ return {
                             modified = "[+]",
                             readonly = "[-]",
                             unnamed = "[No Name]",
-                            newfile = "[New]",
-                        },
-                    }, "filetype",
-                },
-            },
-        },
+                            newfile = "[New]"
+                        }
+                    }
+                }
+            }
+        }
     }, {
         "letieu/harpoon-lualine",
-        dependencies = {{"ThePrimeagen/harpoon", branch = "harpoon2"}},
-    },
+        dependencies = {{"ThePrimeagen/harpoon", branch = "harpoon2"}}
+    }
 }
