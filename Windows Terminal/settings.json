@@ -438,7 +438,7 @@
         }
     ],
     "showTabsInTitlebar": true,
-    "startOnUserLogin": false,
+    "startOnUserLogin": true,
     "tabSwitcherMode": "mru",
     "tabWidthMode": "equal",
     "themes": [],
