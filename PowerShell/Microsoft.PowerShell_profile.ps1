@@ -1,9 +1,9 @@
 if ($host.Name -eq 'ConsoleHost') {
   Import-Module PSReadline
 
-  Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
-  Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
-  Set-PSReadLineKeyHandler -Key Tab -Function Complete
+  Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+  Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+  Set-PSReadLineKeyHandler -Key Tab -Function AcceptSuggestion
   Set-PsFzfOption -EnableAliasFuzzySetLocation
 }
 
