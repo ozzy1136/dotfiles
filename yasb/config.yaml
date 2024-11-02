@@ -247,8 +247,8 @@ widgets:
     options:
       label: "{data}"
       app_list:
+        - {icon: "\uf488", launch: "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"}
         - {icon: "\uf489", launch: "wt"}
-        - {icon: "\uf488", launch: "C:\\Users\\{User}\\AppData\\Local\\Microsoft\\WindowsApps\\Arc.exe"}
         - {icon: "\uf413", launch: "explorer C:\\Users\\{User}"}
         # Currently available to use quick_settings, notification_center, search, widget, launcher (launcher will trigger ALT+A)
         - {icon: "\udb84\udf55", launch: "widget"}
