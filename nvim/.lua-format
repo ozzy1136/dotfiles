@@ -1,4 +1,4 @@
-use-tab: true
+use_tab: true
 continuation_indent_width: 2
 keep_simple_control_block_one_line: false
 keep_simple_function_one_line: false
