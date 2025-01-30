@@ -10,9 +10,9 @@
 		}
 	},
 	"font_family": "Segoe UI",
-	"font_size": 14,
+	"font_size": 15,
 	"max_label_width": 350,
-	"icon_scale": 1.1,
+	"icon_scale": 1,
 	"widget_spacing": 15,
 	"transparency_alpha": 255,
 	"left_widgets": [
