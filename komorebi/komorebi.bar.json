@@ -20,7 +20,8 @@
 			"Komorebi": {
 				"workspaces": {
 					"enable": true,
-					"hide_empty_workspaces": false
+					"hide_empty_workspaces": false,
+					"display": "IconAndText"
 				},
 				"layout": {
 					"enable": true
@@ -78,9 +79,9 @@
 		{
 			"Time": {
 				"enable": false,
-				"format":{
+				"format": {
 					"Custom": "%l:%M %p"
-				} 
+				}
 			}
 		},
 		{
