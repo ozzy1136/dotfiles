@@ -18,10 +18,4 @@ function prompt {
   return $out
 }
 
-function komorebi-start {
-  komorebic start --whkd
-}
-
-$Env:KOMOREBI_CONFIG_HOME = "C:\Users\{User}\.config\komorebi"
-
 oh-my-posh init pwsh --config "$Env:USERPROFILE/.config/oh-my-posh/tokyo.omp.json" | Invoke-Expression
