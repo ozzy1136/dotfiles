@@ -1,7 +1,6 @@
 {
-	"$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.33/schema.json",
+	"$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.39/schema.json",
 	"app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.json",
-	"window_hiding_behaviour": "Cloak",
 	"default_workspace_padding": 10,
 	"default_container_padding": 10,
 	"border": true,
@@ -18,6 +17,26 @@
 			"width": 300
 		}
 	},
+	"mouse_follows_focus": false,
+	"layout_options": {
+		"scrolling": {
+			"columns": 3
+		}
+	},
+	"window_container_behaviour": "Append",
+	"tray_and_multi_window_applications": [],
+	"floating_layer_behaviour": "Float",
+	"floating_applications": [],
+	"ignore_rules": [
+		[
+			{
+				"kind": "Exe",
+				"id": "Mullvad VPN.exe",
+				"matching_strategy": "Equals"
+			}
+		]
+	],
+	"manage_rules": [],
 	"monitors": [
 		{
 			"workspaces": [
@@ -43,19 +62,5 @@
 				}
 			]
 		}
-	],
-	"ignore_rules": [
-		[
-			{
-				"kind": "Exe",
-				"id": "chrome.exe",
-				"matching_strategy": "Equals"
-			},
-			{
-				"kind": "Title",
-				"id": "_crx",
-				"matching_strategy": "StartsWith"
-			}
-		]
 	]
 }
