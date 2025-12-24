@@ -5,9 +5,13 @@
 alt + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
 alt + shift + o         : komorebic reload-configuration
 
+alt + i                 : komorebic toggle-shortcuts
+
 alt + q                 : komorebic close
 alt + m                 : komorebic minimize
 alt + shift + m         : komorebic toggle-maximize
+
+alt + shift + oem_1     : komorebic toggle-workspace-layer # oem_1 is ;
 
 # Focus windows
 alt + h                 : komorebic focus left
