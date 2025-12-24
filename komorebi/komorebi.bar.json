@@ -1,14 +1,15 @@
 {
-	"$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.33/schema.bar.json",
+	"$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.39/schema.bar.json",
 	"monitor": {
 		"index": 0,
 		"work_area_offset": {
 			"left": 0,
-			"top": 40,
+			"top": 45,
 			"right": 0,
-			"bottom": 30
+			"bottom": 35
 		}
 	},
+	"height": 55,
 	"font_family": "Segoe UI",
 	"font_size": 15,
 	"max_label_width": 350,
@@ -21,14 +22,10 @@
 				"workspaces": {
 					"enable": true,
 					"hide_empty_workspaces": false,
-					"display": "IconAndText"
+					"display": "AllIconsAndText"
 				},
 				"layout": {
 					"enable": true
-				},
-				"focused_window": {
-					"enable": false,
-					"show_icon": true
 				}
 			}
 		}
@@ -42,8 +39,11 @@
 	],
 	"right_widgets": [
 		{
-			"Update": {
-				"enable": true
+			"Applications": {
+				"enable": false,
+				"show_command_on_hover": true,
+				"display": "Icon",
+				"items": []
 			}
 		},
 		{
@@ -57,6 +57,11 @@
 			}
 		},
 		{
+			"Update": {
+				"enable": true
+			}
+		},
+		{
 			"Storage": {
 				"enable": false
 			}
@@ -64,23 +69,23 @@
 		{
 			"Network": {
 				"enable": false,
-				"show_total_data_transmitted": true,
-				"show_network_activity": true
-			}
-		},
-		{
-			"Date": {
-				"enable": false,
-				"format": {
-					"Custom": "%A, %B %e, %Y"
-				}
+				"show_total_activity": true,
+				"show_activity": true
 			}
 		},
 		{
 			"Time": {
-				"enable": false,
+				"enable": true,
 				"format": {
 					"Custom": "%l:%M %p"
+				}
+			}
+		},
+		{
+			"Date": {
+				"enable": true,
+				"format": {
+					"Custom": "%A, %B %e, %Y"
 				}
 			}
 		},
