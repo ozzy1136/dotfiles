@@ -1,6 +1,9 @@
 return {
-    {
-        "nvim-treesitter/nvim-treesitter-context",
-        dependencies = {"nvim-treesitter/nvim-treesitter"},
-    },
+	{
+		"nvim-treesitter/nvim-treesitter-context",
+		opts = {
+			max_lines = 1,
+			line_numbers = true
+		}
+	},
 }
