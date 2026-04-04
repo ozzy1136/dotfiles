@@ -1,0 +1,99 @@
+{
+	"$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.40/schema.bar.json",
+	"height": 80,
+	"font_family": "Segoe UI",
+	"font_size": 15,
+	"max_label_width": 350,
+	"icon_scale": 1,
+	"widget_spacing": 10,
+	"transparency_alpha": 255,
+	"monitor": {
+		"index": 0,
+		"work_area_offset": {
+			"left": 0,
+			"top": 80,
+			"right": 0,
+			"bottom": 80
+		}
+	},
+	"left_widgets": [
+		{
+			"Komorebi": {
+				"workspaces": {
+					"enable": true,
+					"hide_empty_workspaces": false,
+					"display": "AllIconsAndText"
+				},
+				"layout": {
+					"enable": true
+				}
+			}
+		}
+	],
+	"center_widgets": [
+		{
+			"Media": {
+				"enable": true,
+				"display": "IconAndControls"
+			}
+		}
+	],
+	"right_widgets": [
+		{
+			"Applications": {
+				"enable": false,
+				"show_command_on_hover": true,
+				"display": "Icon",
+				"items": []
+			}
+		},
+		{
+			"Cpu": {
+				"enable": true
+			}
+		},
+		{
+			"Memory": {
+				"enable": true
+			}
+		},
+		{
+			"Update": {
+				"enable": true
+			}
+		},
+		{
+			"Storage": {
+				"enable": false
+			}
+		},
+		{
+			"Network": {
+				"enable": false,
+				"show_total_activity": true,
+				"show_activity": true
+			}
+		},
+		{
+			"Time": {
+				"enable": false,
+				"format": {
+					"Custom": "%l:%M %p"
+				}
+			}
+		},
+		{
+			"Date": {
+				"enable": false,
+				"format": {
+					"Custom": "%A, %B %e, %Y"
+				}
+			}
+		},
+		{
+			"Battery": {
+				"enable": false
+			}
+		}
+	]
+}

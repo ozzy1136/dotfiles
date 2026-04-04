@@ -1,0 +1,213 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "centerOnLaunch": false,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{5f02dcfe-f3f0-492b-b2a4-903fbaa3fd6a}",
+    "initialCols": 100,
+    "initialRows": 20,
+    "keybindings": 
+    [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.FindText",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "colorScheme": "Flexoki",
+            "cursorShape": "bar",
+            "font": 
+            {
+                "face": "CaskaydiaCove Nerd Font Propo",
+                "size": 14
+            }
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\"",
+                "guid": "{5f02dcfe-f3f0-492b-b2a4-903fbaa3fd6a}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/pwsh.png",
+                "name": "PowerShell",
+                "startingDirectory": "%USERPROFILE%"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#131313",
+            "black": "#1F1F1F",
+            "blue": "#2A84D2",
+            "brightBlack": "#D6DBE5",
+            "brightBlue": "#1081D6",
+            "brightCyan": "#0F7DDB",
+            "brightGreen": "#1DD361",
+            "brightPurple": "#5350B9",
+            "brightRed": "#DE352E",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#F3BD09",
+            "cursorColor": "#B9B9B9",
+            "cyan": "#1081D6",
+            "foreground": "#D6DBE5",
+            "green": "#2DC55E",
+            "name": "Brogrammer",
+            "purple": "#4E5AB7",
+            "red": "#F81118",
+            "selectionBackground": "#1F1F1F",
+            "white": "#D6DBE5",
+            "yellow": "#ECBA0F"
+        },
+        {
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#5A63FF",
+            "brightBlack": "#828282",
+            "brightBlue": "#838DFF",
+            "brightCyan": "#29F0F0",
+            "brightGreen": "#2EE720",
+            "brightPurple": "#FF5CFE",
+            "brightRed": "#FF3B1E",
+            "brightWhite": "#EBEBEB",
+            "brightYellow": "#ECEC16",
+            "cursorColor": "#00F900",
+            "cyan": "#33BBC7",
+            "foreground": "#F5F5F5",
+            "green": "#33BC26",
+            "name": "Firefly Traditional",
+            "purple": "#D53AD2",
+            "red": "#C23720",
+            "selectionBackground": "#CFEAC6",
+            "white": "#CCCCCC",
+            "yellow": "#AFAD24"
+        },
+        {
+            "background": "#100F0F",
+            "black": "#100F0F",
+            "blue": "#205EA6",
+            "brightBlack": "#575653",
+            "brightBlue": "#4385BE",
+            "brightCyan": "#3AA99F",
+            "brightGreen": "#879A39",
+            "brightPurple": "#8B7EC8",
+            "brightRed": "#D14D41",
+            "brightWhite": "#FFFCF0",
+            "brightYellow": "#D0A215",
+            "cursorColor": "#DAD8CE",
+            "cyan": "#24837B",
+            "foreground": "#E6E4D9",
+            "green": "#66800B",
+            "name": "Flexoki",
+            "purple": "#5E409D",
+            "red": "#AF3029",
+            "selectionBackground": "#CECDC3",
+            "white": "#F2F0E5",
+            "yellow": "#C19C00"
+        },
+        {
+            "background": "#121212",
+            "black": "#929292",
+            "blue": "#97BEDC",
+            "brightBlack": "#BDBDBD",
+            "brightBlue": "#B1D8F6",
+            "brightCyan": "#1AB2A8",
+            "brightGreen": "#BDDEAB",
+            "brightPurple": "#FBDAFF",
+            "brightRed": "#FFA1A1",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFDCA0",
+            "cursorColor": "#FFA560",
+            "cyan": "#00988E",
+            "foreground": "#DEDEDE",
+            "green": "#94B979",
+            "name": "Jellybeans",
+            "purple": "#E1C0FA",
+            "red": "#E27373",
+            "selectionBackground": "#474E91",
+            "white": "#DEDEDE",
+            "yellow": "#FFBA7B"
+        },
+        {
+            "background": "#282C35",
+            "black": "#7F7F7F",
+            "blue": "#6699CC",
+            "brightBlack": "#7F7F7F",
+            "brightBlue": "#6699CC",
+            "brightCyan": "#5FB3B3",
+            "brightGreen": "#A9CFA4",
+            "brightPurple": "#F1A5AB",
+            "brightRed": "#E15A60",
+            "brightWhite": "#D4D4D4",
+            "brightYellow": "#FFE2A9",
+            "cursorColor": "#C7C7C7",
+            "cyan": "#5FB3B3",
+            "foreground": "#D4D4D4",
+            "green": "#A9CFA4",
+            "name": "Subliminal",
+            "purple": "#F1A5AB",
+            "red": "#E15A60",
+            "selectionBackground": "#484E5B",
+            "white": "#D4D4D4",
+            "yellow": "#FFE2A9"
+        },
+        {
+            "background": "#1D1D26",
+            "black": "#1D1D26",
+            "blue": "#00526B",
+            "brightBlack": "#636667",
+            "brightBlue": "#00CBFF",
+            "brightCyan": "#00D5D4",
+            "brightGreen": "#00D364",
+            "brightPurple": "#D783FF",
+            "brightRed": "#FF2F92",
+            "brightWhite": "#D5D6F3",
+            "brightYellow": "#FFD479",
+            "cursorColor": "#CBCBF0",
+            "cyan": "#00CECA",
+            "foreground": "#CBCBF0",
+            "green": "#00D364",
+            "name": "Tinacious Design (Dark)",
+            "purple": "#CC66FF",
+            "red": "#FF3399",
+            "selectionBackground": "#FF3399",
+            "white": "#CBCBF0",
+            "yellow": "#FFCC66"
+        }
+    ],
+    "showTabsInTitlebar": true,
+    "tabSwitcherMode": "mru",
+    "tabWidthMode": "equal",
+    "themes": [],
+    "useAcrylicInTabRow": false,
+    "windowingBehavior": "useExisting"
+}

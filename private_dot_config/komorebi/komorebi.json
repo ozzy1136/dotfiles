@@ -1,0 +1,115 @@
+{
+	"$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.40/schema.json",
+	"app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.json",
+	"display_index_preferences": {
+		"0": "0",
+		"1": "3CM4200GBS   "
+	},
+	"bar_configurations": [
+		"$Env:KOMOREBI_CONFIG_HOME/komorebi.bar.monitor_1.json",
+		"$Env:KOMOREBI_CONFIG_HOME/komorebi.bar.monitor_2.json"
+	],
+	"default_workspace_padding": 10,
+	"default_container_padding": 5,
+	"border": true,
+	"stackbar": {
+		"height": 60,
+		"mode": "OnStack",
+		"tabs": {
+			"width": 300,
+			"font_size": 80
+		}
+	},
+	"mouse_follows_focus": false,
+	"layout_options": {
+		"scrolling": {
+			"columns": 3
+		}
+	},
+	"window_container_behaviour": "Append",
+	"tray_and_multi_window_applications": [],
+	"floating_layer_behaviour": "Float",
+	"floating_applications": [],
+	"ignore_rules": [
+		{
+			"kind": "Exe",
+			"id": "Mullvad VPN.exe",
+			"matching_strategy": "Equals"
+		},
+		{
+			"kind": "Exe",
+			"id": "deskflow.exe",
+			"matching_strategy": "Equals"
+		},
+		{
+			"kind": "Exe",
+			"id": "XRiteColorAssistant.exe",
+			"matching_strategy": "Equals"
+		}
+	],
+	"manage_rules": [],
+	"monitors": [
+		{
+			"wallpaper": {
+				"generate_theme": true,
+				"path": "C:\\Users\\amfc1\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\TranscodedWallpaper",
+				"theme_options": {
+					"theme_variant": "Dark"
+				}
+			},
+			"workspaces": [
+				{
+					"name": "I",
+					"layout": "Grid"
+				},
+				{
+					"name": "II",
+					"layout": "Grid"
+				},
+				{
+					"name": "III",
+					"layout": "Grid"
+				},
+				{
+					"name": "IV",
+					"layout": "Grid"
+				},
+				{
+					"name": "V",
+					"layout": "Grid"
+				}
+			]
+		},
+		{
+			"wallpaper": {
+				"generate_theme": true,
+				"path": "C:\\Users\\amfc1\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\TranscodedWallpaper",
+				"theme_options": {
+					"theme_variant": "Dark"
+				}
+			},
+			"workspaces": [
+				{
+					"name": "I",
+					"layout": "Grid"
+				},
+				{
+					"name": "II",
+					"layout": "Grid"
+				},
+				{
+					"name": "III",
+					"layout": "Grid"
+				},
+				{
+					"name": "IV",
+					"layout": "Grid"
+				},
+				{
+					"name": "V",
+					"layout": "Grid"
+				}
+			]
+		}
+	]
+}
