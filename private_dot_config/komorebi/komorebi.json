@@ -52,7 +52,7 @@
 		{
 			"wallpaper": {
 				"generate_theme": true,
-				"path": "C:\\Users\\amfc1\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\TranscodedWallpaper",
+				"path": "%APPDATA%\\Microsoft\\Windows\\Themes\\TranscodedWallpaper",
 				"theme_options": {
 					"theme_variant": "Dark"
 				}
@@ -83,7 +83,7 @@
 		{
 			"wallpaper": {
 				"generate_theme": true,
-				"path": "C:\\Users\\amfc1\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\TranscodedWallpaper",
+				"path": "%APPDATA%\\Microsoft\\Windows\\Themes\\TranscodedWallpaper",
 				"theme_options": {
 					"theme_variant": "Dark"
 				}
