@@ -30,3 +30,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export DOCKER_HOST=unix:///run/user/$(id -u)/podman/podman.sock
 export PATH="$PATH:/opt/nvim/"
+export TERM=xterm-256color
+
+eval "$(oh-my-posh init bash)"
