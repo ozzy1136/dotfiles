@@ -9,4 +9,5 @@ AppData
 .bash_profile
 .bashrc
 .inputrc
+.config/tmux
 {{- end }}
