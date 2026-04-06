@@ -1,9 +1,11 @@
 if ($host.Name -eq 'ConsoleHost') {
   Import-Module PSReadline
+  Import-Module PSCompletions
 
+  Set-PSReadLineOption -HistorySearchCursorMovesToEnd
   Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
   Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
-  Set-PSReadLineKeyHandler -Key Tab -Function AcceptSuggestion
+  Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
   Set-PsFzfOption -EnableAliasFuzzySetLocation
 }
 
