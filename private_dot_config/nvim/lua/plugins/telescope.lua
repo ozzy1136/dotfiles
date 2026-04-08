@@ -10,8 +10,7 @@ return {
 		dependencies = {
 			"nvim-lua/plenary.nvim", "nvim-telescope/telescope-fzf-native.nvim",
 			"nvim-telescope/telescope-ui-select.nvim",
-			{ "nvim-tree/nvim-web-devicons", enabled = vim.g.have_nerd_font },
-			"BurntSushi/ripgrep", "sharkdp/fd",
+			{ "nvim-tree/nvim-web-devicons", enabled = vim.g.have_nerd_font }
 		},
 		config = function()
 			local telescope = require("telescope")
