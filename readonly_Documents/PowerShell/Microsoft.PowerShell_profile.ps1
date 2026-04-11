@@ -5,6 +5,7 @@ if ($host.Name -eq 'ConsoleHost') {
   Set-PSReadLineOption -HistorySearchCursorMovesToEnd
   Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
   Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+  Set-PSReadLineKeyHandler -Key Ctrl+Enter -Function AcceptSuggestion
   Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
   Set-PsFzfOption -EnableAliasFuzzySetLocation
 }
