@@ -30,6 +30,7 @@ vim.opt.scrolloff = 999
 vim.opt.guicursor = "n-v-o-i-cr:ver100-iCursor,ve-r-c-ci-sm:block"
 
 vim.keymap.set("i", "jk", "<esc>")
+vim.keymap.set("n", "<leader>wd", ":update | bdelete<CR>", { desc = "Save and close buffer" })
 vim.keymap.set("n", "<esc>", "<cmd>nohlsearch<cr>")
 vim.keymap.set("n", "<c-d>", "<c-d>zz",
 	{ desc = "Keep line centered while scrolling down by half page" })
