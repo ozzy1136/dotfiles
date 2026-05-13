@@ -29,7 +29,20 @@
 	"window_container_behaviour": "Append",
 	"tray_and_multi_window_applications": [],
 	"floating_layer_behaviour": "Float",
-	"floating_applications": [],
+	"floating_applications": [
+		[
+			{
+				"id": "Privacy and Network Access Policy",
+				"kind": "Title",
+				"matching_strategy": "Equals"
+			},
+			{
+				"kind": "Exe",
+				"id": "vlc.exe",
+				"matching_strategy": "Equals"
+			}
+		]
+	],
 	"ignore_rules": [
 		{
 			"kind": "Exe",
