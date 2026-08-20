@@ -64,6 +64,16 @@
 					"style": "plain",
 					"template": "[<p:tx>\ue266</> RAM: {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB]",
 					"foreground": "p:cy"
+				},
+				{
+					"type": "winget",
+					"style": "plain",
+					"foreground": "p:bl",
+					"template": "  {{ .UpdateCount }} ",
+					"cache": {
+						"duration": "24h",
+						"strategy": "device"
+					}
 				}
 			]
 		},
@@ -81,6 +91,12 @@
 						"style": "full"
 					},
 					"foreground": "p:gr"
+				},
+				{
+					"type": "project",
+					"style": "plain",
+					"foreground": "p:bl",
+					"template": "[{{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }} {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }}]"
 				},
 				{
 					"type": "git",
