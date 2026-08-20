@@ -96,7 +96,7 @@
 					"type": "project",
 					"style": "plain",
 					"foreground": "p:bl",
-					"template": "[{{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }} {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }}]"
+					"template": "{{ if .Error }}[{{ .Error }}]{{ else }}{{ if .Version }}[ {{.Version}}{{ if .Name}} {{ end }}{{ end }}{{ if .Name }}{{ if not .Version}}[{{ end }}{{ .Name }}]{{ else }}{{ if .Version }}]{{ end }}{{ end }}{{ end }}"
 				},
 				{
 					"type": "git",
