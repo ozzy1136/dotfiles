@@ -69,7 +69,7 @@
 					"type": "winget",
 					"style": "plain",
 					"foreground": "p:bl",
-					"template": "  {{ .UpdateCount }} ",
+					"template": "[ {{ .UpdateCount }}]",
 					"cache": {
 						"duration": "24h",
 						"strategy": "device"
