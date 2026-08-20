@@ -42,7 +42,7 @@
 					"type": "os",
 					"style": "diamond",
 					"foreground": "p:tx",
-					"template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}"
+					"template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} "
 				},
 				{
 					"type": "session",
