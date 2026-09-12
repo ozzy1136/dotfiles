@@ -12,14 +12,6 @@
 	"default_workspace_padding": 10,
 	"default_container_padding": 5,
 	"border": true,
-	"stackbar": {
-		"height": 60,
-		"mode": "OnStack",
-		"tabs": {
-			"width": 300,
-			"font_size": 80
-		}
-	},
 	"mouse_follows_focus": false,
 	"layout_options": {
 		"scrolling": {
