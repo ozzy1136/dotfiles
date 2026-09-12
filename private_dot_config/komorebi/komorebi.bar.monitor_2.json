@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.40/schema.bar.json",
+	"$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.41/schema.bar.json",
 	"height": 50,
 	"font_family": "Segoe UI",
 	"font_size": 18,
@@ -40,43 +40,13 @@
 	],
 	"right_widgets": [
 		{
-			"Applications": {
-				"enable": false,
-				"show_command_on_hover": true,
-				"display": "Icon",
-				"items": []
-			}
-		},
-		{
-			"Cpu": {
-				"enable": true
-			}
-		},
-		{
-			"Memory": {
-				"enable": true
-			}
-		},
-		{
 			"Update": {
 				"enable": true
 			}
 		},
 		{
-			"Storage": {
-				"enable": false
-			}
-		},
-		{
-			"Network": {
-				"enable": false,
-				"show_total_activity": true,
-				"show_activity": true
-			}
-		},
-		{
 			"Time": {
-				"enable": false,
+				"enable": true,
 				"format": {
 					"Custom": "%l:%M %p"
 				}
@@ -84,7 +54,7 @@
 		},
 		{
 			"Date": {
-				"enable": false,
+				"enable": true,
 				"format": {
 					"Custom": "%A, %B %e, %Y"
 				}
@@ -92,7 +62,28 @@
 		},
 		{
 			"Battery": {
-				"enable": false
+				"enable": true
+			}
+		},
+		{
+			"Systray": {
+				"enable": true,
+				"hidden_icons": [
+					"XRiteColorAssistant.exe",
+					"kdeconnect-indicator.exe",
+					"Spark Desktop.exe",
+					"nextcloud.exe",
+					"SecurityHealthSystray.exe",
+					{
+						"guid": "6da68f06-00f1-4e6e-8158-7f1ffd4f9db9"
+					},
+					{
+						"tooltip": "X-Mouse Button Control v2.20.5"
+					},
+					{
+						"guid": "7820ae78-23e3-4229-82c1-e41cb67d5b9c"
+					}
+				]
 			}
 		}
 	]
