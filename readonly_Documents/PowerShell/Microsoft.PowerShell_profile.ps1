@@ -1,5 +1,6 @@
 if ($host.Name -eq 'ConsoleHost') {
   Import-Module PSReadline
+  Import-Module PSFzf
   Import-Module PSCompletions
 
   Set-PSReadLineOption -HistorySearchCursorMovesToEnd
