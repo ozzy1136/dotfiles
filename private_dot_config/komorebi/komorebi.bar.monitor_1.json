@@ -40,23 +40,16 @@
 	],
 	"right_widgets": [
 		{
-			"Update": {
-				"enable": true
-			}
-		},
-		{
 			"Time": {
 				"enable": true,
-				"format": {
-					"Custom": "%l:%M %p"
-				}
+				"format": "TwentyFourHourWithoutSeconds"
 			}
 		},
 		{
 			"Date": {
 				"enable": true,
 				"format": {
-					"Custom": "%A, %B %e, %Y"
+					"Custom": "%a, %b %e, %Y"
 				}
 			}
 		},
