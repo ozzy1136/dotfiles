@@ -53,7 +53,19 @@
 			"kind": "Exe",
 			"id": "XRiteColorAssistant.exe",
 			"matching_strategy": "Equals"
-		}
+		},
+		[
+			{
+				"kind": "Exe",
+				"id": "IPTVnator.exe",
+				"matching_strategy": "Equals"
+			},
+			{
+				"kind": "Title",
+				"id": "Picture in picture",
+				"matching_strategy": "Equals"
+			}
+		]
 	],
 	"manage_rules": [],
 	"monitors": [
