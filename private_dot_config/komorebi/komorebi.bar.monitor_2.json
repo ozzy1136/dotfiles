@@ -5,7 +5,7 @@
 	"font_size": 18,
 	"max_label_width": 350,
 	"icon_scale": 1,
-	"widget_spacing": 25,
+	"widget_spacing": 20,
 	"transparency_alpha": 255,
 	"monitor": {
 		"index": 1,
@@ -40,23 +40,16 @@
 	],
 	"right_widgets": [
 		{
-			"Update": {
-				"enable": true
-			}
-		},
-		{
 			"Time": {
 				"enable": true,
-				"format": {
-					"Custom": "%l:%M %p"
-				}
+				"format": "TwentyFourHourWithoutSeconds"
 			}
 		},
 		{
 			"Date": {
 				"enable": true,
 				"format": {
-					"Custom": "%A, %B %e, %Y"
+					"Custom": "%a, %b %e, %Y"
 				}
 			}
 		},
